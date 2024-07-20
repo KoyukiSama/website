@@ -1,1 +1,159 @@
+body {
+    background-color: darkred;
+    color: rgb(245, 178, 130);
+}
 
+
+/* complete container */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* content */
+
+.content {
+    border-style: none;
+    max-width: 60vh;
+    min-width: 40vh;
+    padding-left: 10%;
+}
+
+.content h3 {
+    margin-top: 45px;
+}
+
+.content abbr {
+    color: orange;
+    cursor: help;
+}
+
+.content li li {
+    list-style-type: decimal;
+}
+
+.content a {
+    color: rgb(225, 31, 31);
+}
+
+.content img {
+    margin-top: 10px;
+    max-width: 110%;
+    padding: 10px;
+    border-width: 1em;
+    border-style: outset;
+    background-color: rgb(247, 85, 85);
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-top-color: rgb(208, 54, 54);
+    border-left-color: rgb(208, 54, 54);
+    border-right-color: brown;
+    border-bottom-color: brown;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    background-color: rgb(119, 6, 6);
+    height: 110vh;
+    width: 100;
+    margin-top: -2%;
+    margin-left: -4%;
+
+    border-style: solid;
+    border-color: rgb(171, 39, 39);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 998;
+
+    /* java script */
+    left: -200px; /* Initially hidden */
+}
+
+/* java script */
+.sidebar.open {
+    left: 0; /* Sidebar is visible */
+}
+
+.toggleDaysButton {
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.toggleDaysButton::before {
+    content: '▸';
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.toggleDaysButton.active::before {
+    content: '▾';
+}
+
+.toggleSidebarButton {
+    position: fixed;
+    background-color: transparent;
+    border-radius: 10%;
+    border-color: brown;
+
+    margin: 5px;
+    z-index: 999;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ensure background is visible */
+    z-index: 997;
+    display: none;
+}
+
+.overlay.show {
+    display: block; /* Show the overlay when the sidebar is open */
+}
+
+.sidebar ul {
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 50px;
+    min-width: 40px;
+    padding: 10px;
+}
+
+.sidebar ul::before {
+    content: "🌞";
+    position: sticky;
+    padding-right: 5%;
+}
+
+.sidebar li {
+    list-style-type: none;
+    
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.sidebar a {
+    color: rgb(238, 139, 68);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: brown;
+    text-decoration: wavy;
+}

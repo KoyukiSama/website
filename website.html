@@ -8,10 +8,99 @@
         <meta name="keywords" content="learning, first, website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="30">
-        <title>Kanji</title>
+        <title>M y  l e a r n i n g</title>
         <!-- styles -->
+        <link rel="stylesheet" href="website.css">
     </head>
+
     <body>
-        </h1>
+        <div class="container">
+
+            <!-- siderbar -->
+            <button id="toggleSidebar" class="toggleSidebarButton">☰</button>
+            <div id="overlay" class="overlay"></div> <!-- gives an overlay effect -->
+            <nav id="sidebar" class="sidebar">
+                <ul id="daysList" class="daysList">
+                    Days:
+                    <li><a href="#day1">Day 1</a></li>
+                    <li><a href="#day2">Day 2</a></li>
+                    <li><a href="#day3">Day 3</a></li>
+                    <li><a href="#day4">Day 4</a></li>
+                </ul>
+            </nav>
+
+            <!-- content -->
+            <div class="content">
+
+            <h1>Random learning h1 tag</h1>
+
+            <!-- day 1 -->
+            <section id="day1">
+                <h3>Day 1:</h3>
+                <p>
+                    day 1: Okay so the first thing I learned is that you can
+                    make a h1 element to make a header and so, I made one right there.
+                    Now I'm wondering how lists work because I saw that you can use <abbr title="unordered lists">ul</abbr>
+                    and also li
+                    <br><br>
+                    , I came back on day 4 here and basically so what I learned is that you can use <strong>Like this to bold stuff.</strong><br>
+                    COOL RIGHT?
+                </p>
+
+                <ul class="li-georgian">
+                <li><a href="https://seulgi.zip/">My wife's website</a></li>
+                <li>dog</li>
+                <li>
+                    A vegan latte
+                    <ul>
+                    <li>soy latte</li>
+                    <li>oat latte</li>
+                    </ul>
+                    Pretty yummy
+                </li>
+                </ul>
+                <p>My next goal I guess is to find a way in order to show different pages depending on the week maybe?</p>
+            </section>
+
+            <!-- day 2 -->
+            <section id="day2">
+                <h3>Day 2:</h3>
+                <p>
+                    Alright so, today I learned that margin is outside of the container and padding is to shrink within the border of the element.
+                    Pretty cool. hmm, I wonder how I can enter on this?? <br>
+                    Ohhh, like this <br>
+                    Cooool.</p>
+                <p>
+                    Now i'm wondering how if I could make a bar on the left side like most webpages have
+                    that will have a scroller so that I can link to the days in this sheet <br>
+                    hmmmmm. </p>
+                <p>yosh I made a side bar, but now I'm thinking that maybe I should add some function to it, also, the emoji doesn't work with the ::before statement in the list item, hmmmmmmm.</p>
+            </section>
+            <section id="day3">
+                <h3>Day 3:</h3>
+                <p>Alright sooo, I finally finished the side bar and now there's buttons to just click to here I guess.
+                    <br> I wonder what else I'm going to try.</p>
+                    <p>Maybbeeee an image thing? Idk</p>
+                    <a href="https://vocaloid.fandom.com/wiki/ALGORITHM"><img src="https://static.wikia.nocookie.net/vocaloid/images/e/ef/ALGORITHM.png/revision/latest?cb=20140810055334" alt="an image of utsu-p's album"></a>
+                    <p>aaaaand finally done, yayyyyy, <br>
+                    well okay so, now I made it so that you can click on the image and you'll be brought to the wikipage, I also made a block display when toggled by the button at the left top, that it'll make the display darker under the bar. <br>
+                    I've already learned soooo much, but only like 0.0001% of whats out there.
+                    btw eat your beans.</p>
+
+                    <p>I wonder what more I could do before I start making the kanji app.
+                        hmmmmm.
+                    </p>
+                    <p>Alriggghhht, so, now I made the sidebar close too whenever the day buttons are pressed. <br>
+                    I did it by creating an extra function that will be enabling the showing of the bar whenever the function is called. <br>
+                    rn it happens by clicking the button and the day thingies.</p>
+
+                    <p>I'm thinking about making a function tomorrow where you can add a to do list maybe.</p>
+            </section>
+            <section id="day4">
+                <h3>Day 4:</h3>
+            </section>
+            </div>
+        </div>
+        <script src="website.js"></script>
     </body>
 </html>
